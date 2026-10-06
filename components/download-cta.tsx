@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Download } from "lucide-react"
+import { CheckoutButton } from "@/components/checkout-button"
 
 const PREVIEW_IMAGES = ["/images/months/05.png", "/images/months/07.png", "/images/months/10.png"]
 
@@ -12,16 +12,9 @@ export function DownloadCta() {
             Hang a year of good eating on your wall.
           </h2>
           <p className="mt-5 max-w-md text-pretty leading-relaxed opacity-85 md:mx-0 mx-auto">
-            The complete Taste the Seasons 2027 calendar &mdash; all twelve months &mdash; as a free, printable PDF.
+            The complete Taste the Seasons 2027 calendar — all twelve months — beautifully designed and ready to print at home.
           </p>
-          <a
-            href="/taste-the-seasons-2027.pdf"
-            download
-            className="mt-8 inline-flex items-center gap-2 rounded-full bg-background px-6 py-3 text-sm font-medium text-foreground transition-opacity hover:opacity-90"
-          >
-            <Download className="size-4" aria-hidden="true" />
-            Download 2027 Calendar (PDF)
-          </a>
+          <CheckoutButton />
         </div>
         <div className="flex shrink-0 items-center" aria-hidden="true">
           {PREVIEW_IMAGES.map((src, i) => (

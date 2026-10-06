@@ -20,6 +20,9 @@ importers:
       react-dom:
         specifier: ^19.3.0
         version: 19.3.0(react@19.3.0)
+      stripe:
+        specifier: ^23.0.0
+        version: 23.0.0(@types/node@26.6.4)
     devDependencies:
       '@tailwindcss/postcss':
         specifier: ^4.3.3
@@ -573,6 +576,15 @@ packages:
     resolution: {integrity: sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==}
     engines: {node: '>=0.10.0'}
 
+  stripe@23.0.0:
+    resolution: {integrity: sha512-MDE2A5ZVVluYURORaZEVghSmnLJc3w6aHAlZSxDQMsOjOb3V0O6ro/CiaeFlJS4N7uIVmsg98ocRsPmUK6YfyA==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@types/node': '>=20'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
   styled-jsx@5.1.6:
     resolution: {integrity: sha512-qSVyDTeMotdvQYoHWLNGwRFJHC+i+ZvdBRYosOFgC+Wg1vx4frN2/RG/NA7SYqqvKNLf39P2LSRA2pu6n0XYZA==}
     engines: {node: '>= 12.0.0'}
@@ -1016,6 +1028,10 @@ snapshots:
     optional: true
 
   source-map-js@1.2.2: {}
+
+  stripe@23.0.0(@types/node@26.6.4):
+    optionalDependencies:
+      '@types/node': 26.6.4
 
   styled-jsx@5.1.6(react@19.3.0):
     dependencies:
