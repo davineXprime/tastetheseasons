@@ -1,5 +1,6 @@
 import Image from "next/image"
-import { ArrowDown, Download } from "lucide-react"
+import { ArrowDown } from "lucide-react"
+import { CheckoutButton } from "@/components/checkout-button"
 
 export function Hero() {
   return (
@@ -14,14 +15,10 @@ export function Hero() {
           and what to savor all year long.
         </p>
         <div className="mt-9 flex flex-col items-center gap-3 sm:flex-row">
-          <a
-            href="/taste-the-seasons-2027.pdf"
-            download
+          <CheckoutButton
+            label="Buy the calendar — $10"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
-          >
-            <Download className="size-4" aria-hidden="true" />
-            Download the free PDF
-          </a>
+          />
           <a
             href="#months"
             className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-6 py-3 text-sm font-medium transition-colors hover:bg-muted"

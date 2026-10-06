@@ -1,4 +1,4 @@
-import { Download } from "lucide-react"
+import { CheckoutButton } from "@/components/checkout-button"
 
 export function SiteHeader() {
   return (
@@ -12,14 +12,11 @@ export function SiteHeader() {
           <a href="#inside" className="transition-colors hover:text-foreground">{"What's Inside"}</a>
           <a href="#download" className="transition-colors hover:text-foreground">Get It</a>
         </nav>
-        <a
-          href="/taste-the-seasons-2027.pdf"
-          download
+        <CheckoutButton
+          label="Buy — $10"
+          loadingLabel="Opening…"
           className="inline-flex items-center gap-2 rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition-opacity hover:opacity-85"
-        >
-          <Download className="size-4" aria-hidden="true" />
-          Download
-        </a>
+        />
       </div>
     </header>
   )
